@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Otavio Campos Junqueira</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header-container">
+        <img src="img/logo.png" alt="Sua Logo" class="logo">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label for="toggle" class="checkbox">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-itens">
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="">Projetos</a>
+                            </li>
+                        </ul> 
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <h1>Otávio Campos Junqueira</h1>
+        <h2>Analista de Sistemas</h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/otavio-campos/">Linkedin</a>
+            <a href="https://github.com/Otaviocj">Github</a>
+        </div>
+    </header>
+    <main class="container">
+        <div class="portifolio">
+            <h2>Meus Projetos<span>:</span></h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper" id="card-wrapper" >
+                    <h2></h2>
+                    <a href="https://eletroseteinformatica.netlify.app/">IR</a>
+                </div>
+            </div>
+            <div class="card-text">
+                Empresa focada em soluções de informática e reparo eletrônico, atendendo Sete Lagoas, Araçaí e região.
+            </div>
+            
+        </div>
+        <div class="card-container">
+            <div class="card-2">
+                <div class="card-wrapper-2" id="card-wrapper-2" >
+                    <h2></h2>
+                    <a href="https://on27mariobros.netlify.app/">IR</a>
+                </div>
+            </div>
+            <div class="card-text-2">
+                Reestilização para site do uper Mario Bros o Filme.
+            </div>
+            
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var cardWrapper = document.getElementById("card-wrapper");
+                cardWrapper.addEventListener("click", function() {
+                    var link = cardWrapper.querySelector("a").href;
+                    window.location.href = link;
+                });
+            });
+        </script>
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+
+                <form action="mailto:camposotavio@hotmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="tel" name="celular" id="celular" placeholder="Seu celular(Opcional):">
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                        <div class="btn-reset"><input type="reset" value="LIMPAR"></div>
+                    </div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img class="logo_footer" src="img/logo.png" alt="Logotipo Otávio">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://github.com/Otaviocj"><button><i class="bi bi-github"></i></button></a>
+    <!--Inserir depois  <a href="#"><button><i class="bi bi-youtube"></i></button></a> --> 
+                        <a href="https://www.linkedin.com/in/otavio-campos/"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:camposotavio@hotmail.com">camposotavio@hotmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+</body>
+</html>
