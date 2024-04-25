@@ -525,6 +525,9 @@ footer .line-footer p a {
     .btn-social{
         text-align: center;
     }
+    .btn-contato {
+        display: none;
+    }
 }
 
 .btn-social button {
